@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Mi Catálogo de Proyectos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #000;
         }
 
         header {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 20px;
         }
@@ -23,17 +24,38 @@
             margin: 0;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        .social-links {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .filter-buttons {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .filter-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
         }
 
         .project {
-            margin-bottom: 20px;
-            background-color: white;
+            background-color: #fff;
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 20px;
+            margin: 20px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
 
@@ -44,30 +66,55 @@
         .project p {
             margin: 10px 0;
         }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio</h1>
+        <h1>Mi Catálogo de Proyectos</h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+            <!-- Agrega más enlaces a redes sociales aquí -->
+        </div>
     </header>
 
-    <div class="container">
-        <div class="project">
-            <h2>Proyecto 1</h2>
-            <p>Descripción breve del proyecto.</p>
-            <img src="imagen_proyecto1.jpg" alt="Proyecto 1">
-        </div>
-
-        <div class="project">
-            <h2>Proyecto 2</h2>
-            <p>Otra descripción breve del proyecto.</p>
-            <img src="imagen_proyecto2.jpg" alt="Proyecto 2">
-        </div>
+    <div class="filter-buttons">
+        <button class="filter-button" data-filter="todos">Todos</button>
+        <button class="filter-button" data-filter="web">Web</button>
+        <button class="filter-button" data-filter="movil">Móvil</button>
+        <button class="filter-button" data-filter="otros">Otros</button>
     </div>
+
+    <div class="project web">
+        <h2>Proyecto Web 1</h2>
+        <p>Descripción del proyecto web.</p>
+    </div>
+
+    <div class="project movil">
+        <h2>Proyecto Móvil 1</h2>
+        <p>Descripción del proyecto móvil.</p>
+    </div>
+
+    <div class="project otros">
+        <h2>Otro Proyecto 1</h2>
+        <p>Descripción de otro proyecto.</p>
+    </div>
+
+    <!-- Agrega más proyectos y personaliza según tus necesidades -->
+
+    <div class="project web">
+        <h2>Proyecto Web 2</h2>
+        <p>Descripción del proyecto web.</p>
+    </div>
+
+    <div class="project movil">
+        <h2>Proyecto Móvil 2</h2>
+        <p>Descripción del proyecto móvil.</p>
+    </div>
+
+    <div class="project otros">
+        <h2>Otro Proyecto 2</h2>
+        <p>Descripción de otro proyecto.</p>
+    </div>
+
 </body>
 </html>
