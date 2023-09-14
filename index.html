@@ -1,120 +1,131 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Catálogo de Proyectos</title>
+    <title>Mi Página de GitHub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            color: #000;
         }
-
         header {
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 20px;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .social-links {
             text-align: center;
-            background-color: #333;
-            padding: 10px;
         }
-
-        .social-links a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+        h1 {
+            font-size: 2em;
         }
-
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
         .filter-buttons {
             text-align: center;
-            background-color: #fff;
-            padding: 10px;
+            margin-bottom: 20px;
         }
-
         .filter-button {
-            background-color: #007bff;
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #333;
             color: #fff;
             border: none;
-            padding: 10px 20px;
-            margin: 5px;
             cursor: pointer;
         }
-
-        .project {
-            background-color: #fff;
+        .filter-button:hover {
+            background-color: #555;
+        }
+        .card {
             border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        .project h2 {
-            margin-top: 0;
-        }
-
-        .project p {
-            margin: 10px 0;
+        .card-title {
+            font-weight: bold;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Catálogo de Proyectos</h1>
+        <h1>Nisleida Morales Geoportfolio</h1>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
-            <!-- Agrega más enlaces a redes sociales aquí -->
-        </div>
+              <a href="https://www.linkedin.com/in/nisleida" target="_blank">LinkedIn</a>
+              <!-- Agrega más enlaces a redes sociales aquí -->
+          </div>
+      
     </header>
-
-    <div class="filter-buttons">
-        <button class="filter-button" data-filter="todos">Todos</button>
-        <button class="filter-button" data-filter="web">Web</button>
-        <button class="filter-button" data-filter="movil">Móvil</button>
-        <button class="filter-button" data-filter="otros">Otros</button>
+    <div class="container">
+        <h3>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h3>
+        <div class="filter-buttons">
+            <button class="filter-button" onclick="showAll()">Mostrar Todo</button>
+            <button class="filter-button" onclick="filterByCategory('proyectos')">Proyectos</button>
+            <button class="filter-button" onclick="filterByCategory('blogs')">Blogs</button>
+        </div>
+        <div id="content">
+            <!-- Contenido filtrado se agregará aquí -->
+        </div>
     </div>
+    <script>
+        // Datos de ejemplo para las tarjetas
+        const data = [
+            { title: 'Proyecto 1', category: 'proyectos', url: 'https://www.ejemplo1.com' },
+            { title: 'Proyecto 2', category: 'proyectos', url: 'https://www.ejemplo2.com' },
+            { title: 'Blog 1', category: 'blogs', url: 'https://www.ejemplo3.com' },
+            { title: 'Proyecto 3', category: 'proyectos', url: 'https://www.ejemplo4.com' },
+        ];
 
-    <div class="project web">
-        <h2>Proyecto Web 1</h2>
-        <p>Descripción del proyecto web.</p>
-    </div>
+        // Funciones para filtrar y mostrar el contenido
+        function showAll() {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = '';
 
-    <div class="project movil">
-        <h2>Proyecto Móvil 1</h2>
-        <p>Descripción del proyecto móvil.</p>
-    </div>
+            data.forEach(item => {
+                const card = createCard(item);
+                contentDiv.appendChild(card);
+            });
+        }
 
-    <div class="project otros">
-        <h2>Otro Proyecto 1</h2>
-        <p>Descripción de otro proyecto.</p>
-    </div>
+        function filterByCategory(category) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = '';
 
-    <!-- Agrega más proyectos y personaliza según tus necesidades -->
+            data.filter(item => item.category === category).forEach(item => {
+                const card = createCard(item);
+                contentDiv.appendChild(card);
+            });
+        }
 
-    <div class="project web">
-        <h2>Proyecto Web 2</h2>
-        <p>Descripción del proyecto web.</p>
-    </div>
+        // Función para crear una tarjeta
+        function createCard(item) {
+            const card = document.createElement('div');
+            card.className = 'card';
 
-    <div class="project movil">
-        <h2>Proyecto Móvil 2</h2>
-        <p>Descripción del proyecto móvil.</p>
-    </div>
+            const title = document.createElement('div');
+            title.className = 'card-title';
+            title.textContent = item.title;
 
-    <div class="project otros">
-        <h2>Otro Proyecto 2</h2>
-        <p>Descripción de otro proyecto.</p>
-    </div>
+            const link = document.createElement('a');
+            link.href = item.url;
+            link.textContent = 'Ir al sitio';
 
+            card.appendChild(title);
+            card.appendChild(link);
+
+            return card;
+        }
+
+        // Mostrar todo el contenido al cargar la página
+        showAll();
+    </script>
 </body>
 </html>
