@@ -54,6 +54,7 @@
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
         .card-title {
+            font-family: "Roboto Condensed", Arial, sans-serif;
             font-weight: bold;
             font-size: 1.2em;
         }
@@ -62,17 +63,18 @@
 <body>
     <header>
         <h1>Nisleida Morales Geoportfolio</h1>
-        <div class="social-links">
-              <a href="https://www.linkedin.com/in/nisleida" target="_blank">LinkedIn</a>
-              <!-- Agrega más enlaces a redes sociales aquí -->
-          </div>
+        <h3>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h3>  
       
     </header>
     <div class="container">
-        <h3>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h3>
+        <h5>Urban Planner with 3 years of experience in Geographic Information Systems providing value to businesses with spatial solutions. Interested in mobility, urban analysis, public services and tourism.</h5>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/nisleida" target="_blank">LinkedIn</a>
+          <!-- Agrega más enlaces a redes sociales aquí -->
+        </div>
         <div class="filter-buttons">
-            <button class="filter-button" onclick="showAll()">Mostrar Todo</button>
-            <button class="filter-button" onclick="filterByCategory('proyectos')">Proyectos</button>
+            <button class="filter-button" onclick="showAll()">All</button>
+            <button class="filter-button" onclick="filterByCategory('projects')">projects</button>
             <button class="filter-button" onclick="filterByCategory('blogs')">Blogs</button>
         </div>
         <div id="content">
@@ -82,10 +84,10 @@
     <script>
         // Datos de ejemplo para las tarjetas
         const data = [
-            { title: 'Urban growth Nordelta Time Lapse', category: 'proyectos', url: 'https://www.linkedin.com/pulse/time-lapse-del-crecimiento-de-los-barrios-privados-en-morales/' },
-            { title: 'GBFS - Micromobility Spatiotemporal Analysis in Paris', category: 'proyectos', url: 'https://github.com/urbanis/gbfs-paris-scooters-analysis' },
+            { title: 'Urban growth Nordelta Time Lapse', category: 'projects', url: 'https://www.linkedin.com/pulse/time-lapse-del-crecimiento-de-los-barrios-privados-en-morales/' },
+            { title: 'GBFS - Micromobility Spatiotemporal Analysis in Paris', category: 'projects', url: 'https://github.com/urbanis/gbfs-paris-scooters-analysis' },
             { title: 'Impressions about the mobility turn - Mobilitätswende', category: 'blogs', url: 'https://www.linkedin.com/pulse/5-months-berlin-impressions-mobility-turn-nisleida-morales-/' },
-            { title: 'Mobility and Street Network Analysis for Berlin', category: 'proyectos', url: 'https://github.com/urbanis/mobility-street-network-analysis-osmnx' },
+            { title: 'Mobility and Street Network Analysis for Berlin', category: 'projects', url: 'https://github.com/urbanis/mobility-street-network-analysis-osmnx' },
         ];
 
         // Funciones para filtrar y mostrar el contenido
@@ -128,7 +130,7 @@
             return card;
         }
 
-        // Mostrar todo el contenido al cargar la página
+        // All el contenido al cargar la página
         showAll();
     </script>
 </body>
