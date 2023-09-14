@@ -1,7 +1,83 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Hello World<h1>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filter-button {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .filter-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página de GitHub</h1>
+    </header>
+    <div class="container">
+        <h2>Bienvenido a mi página en GitHub</h2>
+        <div class="filter-buttons">
+            <button class="filter-button" onclick="showAll()">Mostrar Todo</button>
+            <button class="filter-button" onclick="filterByCategory('proyectos')">Proyectos</button>
+            <button class="filter-button" onclick="filterByCategory('blogs')">Blogs</button>
+        </div>
+        <div id="content">
+            <!-- Contenido filtrado se agregará aquí -->
+        </div>
+    </div>
+    <script>
+        // Funciones para filtrar el contenido
+        function showAll() {
+            document.getElementById('content').innerHTML = `
+                <p><a href="https://www.ejemplo1.com">Enlace a Ejemplo 1</a></p>
+                <p><a href="https://www.ejemplo2.com">Enlace a Ejemplo 2</a></p>
+                <p><a href="https://www.ejemplo3.com">Enlace a Ejemplo 3</a></p>
+            `;
+        }
+
+        function filterByCategory(category) {
+            document.getElementById('content').innerHTML = `
+                <p><a href="https://www.ejemplo1.com">Enlace a Ejemplo 1 (${category})</a></p>
+                <p><a href="https://www.ejemplo2.com">Enlace a Ejemplo 2 (${category})</a></p>
+            `;
+        }
+
+        // Mostrar todo el contenido al cargar la página
+        showAll();
+    </script>
+</body>
 </html>
