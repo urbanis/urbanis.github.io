@@ -42,14 +42,25 @@
         .filter-button:hover {
             background-color: #555;
         }
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página de GitHub</h1>
+        <h1>Nisleida Morales Geoportfolio</h1>
     </header>
     <div class="container">
-        <h2>Bienvenido a mi página en GitHub</h2>
+        <h2>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h2>
         <div class="filter-buttons">
             <button class="filter-button" onclick="showAll()">Mostrar Todo</button>
             <button class="filter-button" onclick="filterByCategory('proyectos')">Proyectos</button>
@@ -60,20 +71,52 @@
         </div>
     </div>
     <script>
-        // Funciones para filtrar el contenido
+        // Datos de ejemplo para las tarjetas
+        const data = [
+            { title: 'Proyecto 1', category: 'proyectos', url: 'https://www.ejemplo1.com' },
+            { title: 'Proyecto 2', category: 'proyectos', url: 'https://www.ejemplo2.com' },
+            { title: 'Blog 1', category: 'blogs', url: 'https://www.ejemplo3.com' },
+            { title: 'Proyecto 3', category: 'proyectos', url: 'https://www.ejemplo4.com' },
+        ];
+
+        // Funciones para filtrar y mostrar el contenido
         function showAll() {
-            document.getElementById('content').innerHTML = `
-                <p><a href="https://www.ejemplo1.com">Enlace a Ejemplo 1</a></p>
-                <p><a href="https://www.ejemplo2.com">Enlace a Ejemplo 2</a></p>
-                <p><a href="https://www.ejemplo3.com">Enlace a Ejemplo 3</a></p>
-            `;
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = '';
+
+            data.forEach(item => {
+                const card = createCard(item);
+                contentDiv.appendChild(card);
+            });
         }
 
         function filterByCategory(category) {
-            document.getElementById('content').innerHTML = `
-                <p><a href="https://www.ejemplo1.com">Enlace a Ejemplo 1 (${category})</a></p>
-                <p><a href="https://www.ejemplo2.com">Enlace a Ejemplo 2 (${category})</a></p>
-            `;
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = '';
+
+            data.filter(item => item.category === category).forEach(item => {
+                const card = createCard(item);
+                contentDiv.appendChild(card);
+            });
+        }
+
+        // Función para crear una tarjeta
+        function createCard(item) {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const title = document.createElement('div');
+            title.className = 'card-title';
+            title.textContent = item.title;
+
+            const link = document.createElement('a');
+            link.href = item.url;
+            link.textContent = 'Ir al sitio';
+
+            card.appendChild(title);
+            card.appendChild(link);
+
+            return card;
         }
 
         // Mostrar todo el contenido al cargar la página
