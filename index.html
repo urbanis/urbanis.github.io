@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de GitHub</title>
+    <title>Mi Portafolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,116 +11,63 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+
         header {
             background-color: #333;
-            color: #fff;
-            padding: 20px;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
+
         h1 {
-            font-size: 2em;
+            margin: 0;
         }
+
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .filter-buttons {
-            text-align: center;
+
+        .project {
             margin-bottom: 20px;
-        }
-        .filter-button {
-            margin: 5px;
-            padding: 5px 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .filter-button:hover {
-            background-color: #555;
-        }
-        .card {
+            background-color: white;
             border: 1px solid #ddd;
             padding: 10px;
-            margin: 10px;
-            background-color: #fff;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
-        .card-title {
-            font-weight: bold;
-            font-size: 1.2em;
+
+        .project h2 {
+            margin-top: 0;
+        }
+
+        .project p {
+            margin: 10px 0;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Nisleida Morales Geoportfolio</h1>
+        <h1>Mi Portafolio</h1>
     </header>
+
     <div class="container">
-        <h2>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h2>
-        <div class="filter-buttons">
-            <button class="filter-button" onclick="showAll()">Mostrar Todo</button>
-            <button class="filter-button" onclick="filterByCategory('proyectos')">Proyectos</button>
-            <button class="filter-button" onclick="filterByCategory('blogs')">Blogs</button>
+        <div class="project">
+            <h2>Proyecto 1</h2>
+            <p>Descripción breve del proyecto.</p>
+            <img src="imagen_proyecto1.jpg" alt="Proyecto 1">
         </div>
-        <div id="content">
-            <!-- Contenido filtrado se agregará aquí -->
+
+        <div class="project">
+            <h2>Proyecto 2</h2>
+            <p>Otra descripción breve del proyecto.</p>
+            <img src="imagen_proyecto2.jpg" alt="Proyecto 2">
         </div>
     </div>
-    <script>
-        // Datos de ejemplo para las tarjetas
-        const data = [
-            { title: 'Proyecto 1', category: 'proyectos', url: 'https://www.ejemplo1.com' },
-            { title: 'Proyecto 2', category: 'proyectos', url: 'https://www.ejemplo2.com' },
-            { title: 'Blog 1', category: 'blogs', url: 'https://www.ejemplo3.com' },
-            { title: 'Proyecto 3', category: 'proyectos', url: 'https://www.ejemplo4.com' },
-        ];
-
-        // Funciones para filtrar y mostrar el contenido
-        function showAll() {
-            const contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '';
-
-            data.forEach(item => {
-                const card = createCard(item);
-                contentDiv.appendChild(card);
-            });
-        }
-
-        function filterByCategory(category) {
-            const contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '';
-
-            data.filter(item => item.category === category).forEach(item => {
-                const card = createCard(item);
-                contentDiv.appendChild(card);
-            });
-        }
-
-        // Función para crear una tarjeta
-        function createCard(item) {
-            const card = document.createElement('div');
-            card.className = 'card';
-
-            const title = document.createElement('div');
-            title.className = 'card-title';
-            title.textContent = item.title;
-
-            const link = document.createElement('a');
-            link.href = item.url;
-            link.textContent = 'Ir al sitio';
-
-            card.appendChild(title);
-            card.appendChild(link);
-
-            return card;
-        }
-
-        // Mostrar todo el contenido al cargar la página
-        showAll();
-    </script>
 </body>
 </html>
