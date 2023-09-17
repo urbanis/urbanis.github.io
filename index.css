@@ -41,34 +41,3 @@ h3 {
 .social-media-icon {
     width: 50px;
 }
-
-.filter-buttons {
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 2px;
-}
-
-.filter-button {
-    margin: 5px;
-    padding: 5px 10px;
-    background-color: #005B93;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-}
-.filter-button:hover {
-    background-color: #555;
-}
-.card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-.card-title {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-}
