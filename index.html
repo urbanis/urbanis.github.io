@@ -2,103 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <title>Nisleida Morales Geoportfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>Nisleida Morales Geoportfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="row">
-            <div class="col-xs-12 col-sm-2 col-md-2">
-                <img class="avatar" src="assets/images/profile_picture.jpg" alt="Nisleida Morales">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <h1>Nisleida Morales</h1>
-                <h3>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h3>
-                <h3>Urban Planner with 3 years of experience in Geographic Information Systems providing value to
-                    businesses with spatial solutions. Interested in mobility, urban analysis, public services and
-                    tourism.</h3>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 contact-information">
-                <a target="_blank" href="https://www.linkedin.com/in/nisleida">
-                    <img class="social-media-icon" src="assets/icons/linkedin.svg">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/nisleida">
-                    <img class="social-media-icon" src="assets/icons/linkedin.svg">
-                </a>
-                <h3>Email: nisleida.morales@gmail.com</h3>
-            </div>
+  <header>
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 col-md-2">
+        <img class="avatar" src="assets/images/profile_picture.jpg" alt="Nisleida Morales">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <h1>Nisleida Morales</h1>
+        <h3>GIS Analyst | BSc. Urban Planning | MSc. St. Urban Planning and mobility</h3>
+        <h3>Urban Planner with 3 years of experience in Geographic Information Systems providing value to
+          businesses with spatial solutions. Interested in mobility, urban analysis, public services and
+          tourism.</h3>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 contact-information">
+        <a target="_blank" href="https://www.linkedin.com/in/nisleida">
+          <img class="social-media-icon" src="assets/icons/linkedin.svg">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/nisleida">
+          <img class="social-media-icon" src="assets/icons/linkedin.svg">
+        </a>
+        <h3>Email: nisleida.morales@gmail.com</h3>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Geoportfolio</h1>
+    <div>
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-    </header>
-
-    <div class="container">
-        <h1>Geoportfolio</h1>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="filter-buttons">
-        <button class="filter-button" onclick="showAll()">All</button>
-        <button class="filter-button" onclick="filterByCategory('projects')">projects</button>
-        <button class="filter-button" onclick="filterByCategory('blogs')">Blogs</button>
-    </div>
-    <div id="content">
-        <!-- Contenido filtrado se agregará aquí -->
-    </div>
-    </div>
-    <script>
-        // Datos de ejemplo para las tarjetas
-        const data = [
-            { title: 'Urban growth Nordelta Time Lapse', category: 'projects', url: 'https://www.linkedin.com/pulse/time-lapse-del-crecimiento-de-los-barrios-privados-en-morales/' },
-            { title: 'GBFS - Micromobility Spatiotemporal Analysis in Paris', category: 'projects', url: 'https://github.com/urbanis/gbfs-paris-scooters-analysis' },
-            { title: 'Impressions about the mobility turn - Mobilitätswende', category: 'blogs', url: 'https://www.linkedin.com/pulse/5-months-berlin-impressions-mobility-turn-nisleida-morales-/' },
-            { title: 'Mobility and Street Network Analysis for Berlin', category: 'projects', url: 'https://github.com/urbanis/mobility-street-network-analysis-osmnx' },
-        ];
-
-        // Funciones para filtrar y mostrar el contenido
-        function showAll() {
-            const contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '';
-
-            data.forEach(item => {
-                const card = createCard(item);
-                contentDiv.appendChild(card);
-            });
-        }
-
-        function filterByCategory(category) {
-            const contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '';
-
-            data.filter(item => item.category === category).forEach(item => {
-                const card = createCard(item);
-                contentDiv.appendChild(card);
-            });
-        }
-
-        // Función para crear una tarjeta
-        function createCard(item) {
-            const card = document.createElement('div');
-            card.className = 'card';
-
-            const title = document.createElement('div');
-            title.className = 'card-title';
-            title.textContent = item.title;
-
-            const link = document.createElement('a');
-            link.href = item.url;
-            link.textContent = 'Go';
-
-            card.appendChild(title);
-            card.appendChild(link);
-
-            return card;
-        }
-
-        // All el contenido al cargar la página
-        showAll();
-    </script>
+  </div>
 </body>
-
 </html>
