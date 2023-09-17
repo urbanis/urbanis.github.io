@@ -28,6 +28,11 @@ h3 {
     text-align: center;
     font-family: Roboto, sans-serif;
 }
+
+.avatar {
+    width: 100%;
+}
+
 .filter-buttons {
     text-align: center;
     margin-bottom: 20px;
