@@ -55,9 +55,33 @@ h3 {
 }
 
 .card {
-    margin: 0 5px;
+    margin: 10px 5px;
 }
 
 .card-icon {
     width: 30px;  
-}     
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
