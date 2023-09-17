@@ -1,0 +1,57 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+header {
+    background-color: #005B93;
+    color: #fff;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+}
+h1 {
+    font-size: 2em;
+    font-family: Roboto, sans-serif;
+}
+
+h3 {
+    font-size: 1em;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #005B93;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.filter-button:hover {
+    background-color: #555;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
