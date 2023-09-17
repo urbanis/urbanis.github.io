@@ -3,32 +3,33 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    font-family: Roboto, sans-serif;
 }
 
 header {
     background-color: #005B93;
     color: #fff;
     padding: 20px;
-    font-family: Roboto, sans-serif;
 }
 
 h1 {
     font-size: 2em;
-    font-family: Roboto, sans-serif;
 }
 
 h3 {
     font-size: 1em;
-    font-family: Roboto, sans-serif;
 }
 
 .title-section {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #005B93;
 }
 
 .avatar {
     max-width: 150px;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -38,6 +39,7 @@ h3 {
 
 .social-media-icon {
     width: 50px;
+    padding-bottom: 10px;
 }
 
 .card {
