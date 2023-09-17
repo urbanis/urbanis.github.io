@@ -31,12 +31,23 @@ h3 {
 
 .avatar {
     width: 100%;
+    border-radius: 50%;
+}
+
+.contact-information {
+    text-align: right;
+}
+
+.social-media-icon {
+    width: 50px;
 }
 
 .filter-buttons {
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 2px;
 }
+
 .filter-button {
     margin: 5px;
     padding: 5px 10px;
@@ -44,6 +55,7 @@ h3 {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 .filter-button:hover {
     background-color: #555;
