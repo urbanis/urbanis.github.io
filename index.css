@@ -22,10 +22,14 @@ h3 {
     font-family: Roboto, sans-serif;
 }
 
+.title-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .avatar {
-    max-width: 50%;
+    max-width: 150px;
     border-radius: 50%;
-    text-align: right;
 }
 
 .contact-information {
