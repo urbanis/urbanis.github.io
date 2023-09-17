@@ -4,12 +4,14 @@ body {
     padding: 0;
     background-color: #fff;
 }
+
 header {
     background-color: #005B93;
     color: #fff;
     padding: 20px;
     font-family: Roboto, sans-serif;
 }
+
 h1 {
     font-size: 2em;
     font-family: Roboto, sans-serif;
@@ -40,4 +42,8 @@ h3 {
 
 .social-media-icon {
     width: 50px;
+}
+
+.card {
+    margin: 0 5px;
 }
