@@ -77,11 +77,22 @@ a:link {
   a:hover {
     color: white;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:active {
     color: white;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
+  }
+
+  .card-icon:hover {
+    color: gray;
+    transform: scale(1.2);
+  }
+
+
+  .social-media-icon:hover {
+    color: gray;
+    transform: scale(1.2);
   }
