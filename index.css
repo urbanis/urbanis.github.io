@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #005B93;
+    background-color: #0a4275;
     color: #fff;
     padding: 20px;
 }
@@ -36,7 +36,7 @@ h3 {
     text-align: center;
     margin: 20px 0;
     padding-bottom: 10px;
-    border-bottom: 1px solid #005B93;
+    border-bottom: 1px solid #0a4275;
 }
 
 .avatar {
@@ -54,8 +54,14 @@ h3 {
     padding-bottom: 5px;
 }
 
+.social-media-icon-footer {
+    width: 30px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+}
+
 .card {
-    margin: 10px 5px;
+    margin: 20px 5px;
 }
 
 .card-icon {
@@ -100,3 +106,4 @@ a:link {
   .card:hover {
     transform: scale(1.05);
   }
+
