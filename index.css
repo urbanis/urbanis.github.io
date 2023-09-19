@@ -96,3 +96,7 @@ a:link {
     color: gray;
     transform: scale(1.2);
   }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
