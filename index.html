@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Nisleida Morales Geoportfolio</title>
-  <link href="assets/icons/world.png">
+  <link rel="icon" href="assets/icons/world.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="assets/styles/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 
 </head>
 
@@ -30,33 +30,26 @@
 
         </div>
         <div class="col-xs-12 col-sm-2 col-md-2 contact-information">
-          <a target="_blank" href="https://www.linkedin.com/in/nisleida">
-            <img class="social-media-icon" data-toggle="tooltip" data-placement="bottom" title="Linkedin page"
-              src="assets/icons/linkedin-blanco.svg">
-          </a>
-          <a target="_blank" href="https://github.com/urbanis">
-            <img class="social-media-icon" data-toggle="tooltip" data-placement="bottom" title="Github Repositories"
-              src="assets/icons/github-blanco.svg">
-          </a>
-          <a target="_blank"
-            href="https://drive.google.com/drive/folders/1jdqdqmKNqgfNW6E45_2Jxd6dMipYq6ip?usp=drive_link">
-            <img class="social-media-icon" data-toggle="tooltip" data-placement="bottom" title="Download my Resumé"
-              src="assets/icons/resume-blanco.svg">
-          </a>
-
-          <button id="feedbackButton">Send Feedback</button>
-          <div id="feedbackPopup" class="popup">
-              <div class="popup-content">
-    
-                <p>I appreciate your time and input.&#128512;&#127758;</p>
-                  <textarea id="feedbackText" rows="4" placeholder="Your feedback"></textarea>
-                  <input type="email" id="emailInput" placeholder="Your Email">
-                  <button id="submitFeedback">Submit</button>
-                  <button id="closePopup">Close</button>
+          <div class="social-media">
+            <a target="_blank" href="https://www.linkedin.com/in/nisleida">
+              <img class="social-media-icon" data-toggle="tooltip" data-placement="bottom" title="Linkedin page"
+                src="assets/icons/linkedin-blanco.svg">
+            </a>
+            <a target="_blank" href="https://github.com/urbanis">
+              <img class="social-media-icon" data-toggle="tooltip" data-placement="bottom" title="Github Repositories"
+                src="assets/icons/github-blanco.svg">
+            </a>
+            <a target="_blank"
+              href="https://drive.google.com/drive/folders/1jdqdqmKNqgfNW6E45_2Jxd6dMipYq6ip?usp=drive_link">
+              <img class="social-media-icon" data-toggle="tooltip" data-placement="bottom" title="Download my Resumé"
+                src="assets/icons/resume-blanco.svg">
+            </a>
           </div>
-          <script src="script.js"></script>
+          <button id="btn-nis-send-me-feedback" type="button" class="btn-nis btn-nis-primary" data-bs-toggle="modal"
+            data-bs-target="#sendMeFeedbackModal">
+            Reach me out!
+          </button>
         </div>
-      </div>
       </div>
     </div>
   </header>
@@ -99,7 +92,8 @@
                 <img class="card-icon" src="assets/icons/github.svg" data-toggle="tooltip" data-placement="bottom"
                   title="Github">
               </a>
-              <a target="_blank" href="https://ni01duqakafoxecj.maps.arcgis.com/apps/dashboards/8b360b40c6184e10808819dac6072643">
+              <a target="_blank"
+                href="https://ni01duqakafoxecj.maps.arcgis.com/apps/dashboards/8b360b40c6184e10808819dac6072643">
                 <img class="card-icon" src="assets/icons/arcgis.svg" data-toggle="tooltip" data-placement="bottom"
                   title="ArcGIS Dashboard">
               </a>
@@ -173,10 +167,7 @@
       </div>
     </div>
   </div>
-
-</body>
-<footer class="text-center text-white" style="background-color: #0a4275;">
-
+  <footer class="text-center text-white" style="background-color: #0a4275;">
     <a target="_blank" href="https://www.linkedin.com/in/nisleida">
       <img class="social-media-icon-footer" data-toggle="tooltip" data-placement="bottom" title="Linkedin page"
         src="assets/icons/linkedin-blanco.svg">
@@ -188,14 +179,44 @@
     <a target="_blank" href="https://drive.google.com/drive/folders/1jdqdqmKNqgfNW6E45_2Jxd6dMipYq6ip?usp=drive_link">
       <img class="social-media-icon-footer" data-toggle="tooltip" data-placement="bottom" title="Download my Resumé"
         src="assets/icons/resume-blanco.svg">
-        
+
     </a>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       <h6>Nisleida Morales - <a href="mailto: nisleida.morales@gmail.com"> nisleida.morales@gmail.com</a></p>
-
+    </div>
+  </footer>
+  <div class="modal fade" id="sendMeFeedbackModal" tabindex="-1" aria-labelledby="reachMeOutModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-nis-content">
+        <div class="modal-header modal-nis-header">
+          <h5 class="modal-title" id="reachMeOutModal">
+            I appreciate your time and input 😀🌎
+          </h5>
+        </div>
+        <div class="modal-body modal-nis-body">
+          <div class="mb-3">
+            <input type="email" class="form-control" id="reachMeOutModalEmailAddress" placeholder="Email address">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="reachMeOutModalMessage"
+              placeholder="Any message, thoughts, ideas, improvement or feedback is welcome..." rows="4"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer modal-nis-footer">
+          <button type="button" class="btn-nis btn-nis-primary btn-nis-modal-actions" onclick="prepareAndOpenEmail()"
+            data-bs-dismiss="modal">
+            Submit
+          </button>
+          <button type="button" class="btn-nis btn-nis-secondary btn-nis-modal-actions" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-</footer>
-
-
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="assets/scripts/sendMeFeedbackModal.js"></script>
 
 </html>
