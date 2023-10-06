@@ -153,6 +153,8 @@ h2 {
 
 #btn-nis-send-me-feedback {
     padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .btn-nis-modal-actions {
@@ -178,3 +180,9 @@ h2 {
     border-top: none;
     padding-top: 0;
 }
+
+.btn-nis-primary {
+    background-color: #0C355E;
+    color: #fff;
+}
+
