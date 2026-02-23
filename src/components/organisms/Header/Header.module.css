@@ -1,0 +1,60 @@
+.header {
+  background-color: #0a4275;
+  color: #fff;
+  padding: 20px 50px;
+  height: auto;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.avatarCol {
+  display: flex;
+  justify-content: center;
+}
+
+.headerTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #fff;
+}
+
+.headerText {
+  color: #fff;
+  font-size: 1em;
+}
+
+.headerContent {
+  font-size: 1em;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.emailLink {
+  color: #fff !important;
+}
+
+.emailLink:hover {
+  color: #ccc !important;
+}
+
+.socialCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .socialCol {
+    margin-top: 16px;
+  }
+}

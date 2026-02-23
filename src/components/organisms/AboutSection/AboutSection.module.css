@@ -1,0 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bio {
+  font-size: 1em;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0a4275;
+  font-size: 2em !important;
+}
+
+.subtitle {
+  font-size: 1em;
+  padding: 20px;
+  text-align: center;
+}

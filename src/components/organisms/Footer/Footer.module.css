@@ -1,0 +1,33 @@
+.footer {
+  background-color: #0a4275;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+
+.buttonContainer {
+  padding: 15px 0;
+}
+
+.contactButton {
+  background-color: #0c355e;
+  border-color: #0c355e;
+}
+
+.contactButton:hover {
+  background-color: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
+
+.info {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+}
+
+.emailLink {
+  color: #fff !important;
+}
+
+.emailLink:hover {
+  color: #ccc !important;
+}

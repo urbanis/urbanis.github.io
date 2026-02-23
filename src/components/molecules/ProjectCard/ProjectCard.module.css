@@ -1,0 +1,26 @@
+.card {
+  margin: 20px 5px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.meta {
+  margin-bottom: 12px;
+}
+
+.tags {
+  margin-bottom: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+}

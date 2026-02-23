@@ -1,0 +1,188 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #0a4275;
+    color: #fff;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Montserrat', Bold;
+    font-size: 2em;
+}
+
+.header-content {
+    font-size: 1em;
+}
+
+.title-section {
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0a4275;
+}
+
+.avatar {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contact-information {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icon {
+    width: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.social-media-icon-footer {
+    width: 30px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+}
+
+.card {
+    margin: 20px 5px;
+}
+
+.card-icon {
+    width: 30px;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card-icon:hover {
+    color: gray;
+    transform: scale(1.2);
+}
+
+
+.social-media-icon:hover {
+    color: gray;
+    transform: scale(1.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #0C355E;
+}
+
+.btn-nis {
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nis-primary {
+    background-color: #0C355E;
+    color: #fff;
+}
+
+.btn-nis-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-nis-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn-nis-secondary:hover {
+    background-color: #999;
+}
+
+#btn-nis-send-me-feedback {
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-nis-modal-actions {
+    padding: 5px 5px;
+}
+
+.modal-nis-content {
+    border-radius: 10px;
+}
+
+.modal-nis-header {
+    justify-content: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-nis-body {
+    padding-bottom: 0;
+}
+
+.modal-nis-footer {
+    justify-content: center;
+    border-top: none;
+    padding-top: 0;
+}
+
+.btn-nis-primary {
+    background-color: #0C355E;
+    color: #fff;
+}
+

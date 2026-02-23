@@ -1,0 +1,1 @@
+export { CertificationModal } from './CertificationModal';

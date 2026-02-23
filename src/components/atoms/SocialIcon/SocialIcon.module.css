@@ -1,0 +1,21 @@
+.icon {
+  transition: transform 0.2s ease;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.link {
+  display: inline-block;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+}
