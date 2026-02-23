@@ -7,7 +7,7 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import storybook from 'eslint-plugin-storybook';
 
 export default [
-  { ignores: ['dist', '.eslintrc.cjs'] },
+  { ignores: ['dist', '.eslintrc.cjs', 'assets/', 'docs/'] },
   js.configs.recommended,
   ...tsPlugin.configs['flat/recommended'],
   reactHooks.configs.flat['recommended'],
