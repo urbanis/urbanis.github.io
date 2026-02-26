@@ -1,4 +1,5 @@
 import { Card, Space } from 'antd';
+import { motion } from 'motion/react';
 import { TechTag } from '@/components/atoms/TechTag';
 import { IconButton } from '@/components/atoms/IconButton';
 import type { Project } from '@/types';
@@ -22,39 +23,49 @@ const tooltipMap: Record<string, string> = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card
-      className={styles.card}
-      cover={
-        <img
-          alt={project.imageAlt}
-          src={project.image}
-          className={styles.image}
-        />
-      }
+    <motion.div
+      style={{ borderRadius: 12, height: '100%' }}
+      whileHover={{
+        y: -6,
+        boxShadow:
+          '0 20px 40px rgba(56,189,248,0.15), 0 0 0 1px rgba(56,189,248,0.2)',
+      }}
+      transition={{ type: 'spring', stiffness: 350, damping: 25 }}
     >
-      <Card.Meta
-        title={project.title}
-        description={project.description}
-        className={styles.meta}
-      />
-      <div className={styles.tags}>
-        <Space size={[0, 4]} wrap>
-          {project.tags.map((tag) => (
-            <TechTag key={tag} label={tag} />
-          ))}
-        </Space>
-      </div>
-      <div className={styles.links}>
-        {project.links.map((link) => (
-          <IconButton
-            key={link.url}
-            src={iconMap[link.type]}
-            alt={link.type}
-            tooltip={tooltipMap[link.type]}
-            href={link.url}
+      <Card
+        className={styles.card}
+        cover={
+          <img
+            alt={project.imageAlt}
+            src={project.image}
+            className={styles.image}
           />
-        ))}
-      </div>
-    </Card>
+        }
+      >
+        <Card.Meta
+          title={project.title}
+          description={project.description}
+          className={styles.meta}
+        />
+        <div className={styles.tags}>
+          <Space size={[0, 4]} wrap>
+            {project.tags.map((tag) => (
+              <TechTag key={tag} label={tag} />
+            ))}
+          </Space>
+        </div>
+        <div className={styles.links}>
+          {project.links.map((link) => (
+            <IconButton
+              key={link.url}
+              src={iconMap[link.type]}
+              alt={link.type}
+              tooltip={tooltipMap[link.type]}
+              href={link.url}
+            />
+          ))}
+        </div>
+      </Card>
+    </motion.div>
   );
 }

@@ -1,4 +1,5 @@
 import { Tooltip } from 'antd';
+import { motion } from 'motion/react';
 import styles from './SocialIcon.module.css';
 
 interface SocialIconProps {
@@ -19,11 +20,13 @@ export function SocialIcon({
   size = 40,
 }: SocialIconProps) {
   const imgElement = (
-    <img
+    <motion.img
       src={src}
       alt={alt}
       className={styles.icon}
       style={{ width: size, height: size }}
+      whileHover={{ scale: 1.2 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 20 }}
     />
   );
 

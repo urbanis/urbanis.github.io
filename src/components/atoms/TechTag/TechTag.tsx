@@ -8,11 +8,12 @@ export function TechTag({ label }: TechTagProps) {
   return (
     <Tag
       style={{
-        color: '#6c757d',
-        backgroundColor: 'transparent',
-        border: 'none',
-        padding: 0,
-        fontSize: '0.875rem',
+        color: '#38bdf8',
+        backgroundColor: 'rgba(56,189,248,0.08)',
+        border: '1px solid rgba(56,189,248,0.2)',
+        borderRadius: '4px',
+        padding: '2px 8px',
+        fontSize: '0.8rem',
       }}
     >
       {label}

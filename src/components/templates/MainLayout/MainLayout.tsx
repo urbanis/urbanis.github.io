@@ -1,6 +1,7 @@
 import { Layout } from 'antd';
 import { Header } from '@/components/organisms/Header';
 import { AboutSection } from '@/components/organisms/AboutSection';
+import { TimeMapSection } from '@/components/organisms/TimeMapSection';
 import { PortfolioGrid } from '@/components/organisms/PortfolioGrid';
 import { Footer } from '@/components/organisms/Footer';
 import { CertificationModal } from '@/components/molecules/CertificationModal';
@@ -26,7 +27,8 @@ export function MainLayout() {
         onCertificationClick={certificationModal.open}
       />
       <Content className={styles.content}>
-        <AboutSection bio={personalInfo.bio} />
+        <AboutSection bio={personalInfo.bio} stats={personalInfo.stats} />
+        <TimeMapSection />
         <PortfolioGrid projects={projects} />
       </Content>
       <Footer

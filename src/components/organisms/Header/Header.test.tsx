@@ -10,6 +10,7 @@ const mockPersonalInfo: PersonalInfo = {
   email: 'test@example.com',
   avatar: '/test-avatar.jpg',
   bio: 'Test bio',
+  stats: [],
 };
 
 const mockSocialLinks: SocialLink[] = [

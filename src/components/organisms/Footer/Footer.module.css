@@ -1,33 +1,42 @@
 .footer {
-  background-color: #0a4275;
-  color: #fff;
+  background-color: #0a0f1e;
+  color: #94a3b8;
   text-align: center;
   padding: 0;
+  border-top: 1px solid rgba(56, 189, 248, 0.2);
 }
 
 .buttonContainer {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .contactButton {
-  background-color: #0c355e;
-  border-color: #0c355e;
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+  padding: 0 24px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  transition: background 0.2s ease, color 0.2s ease !important;
 }
 
 .contactButton:hover {
-  background-color: #0056b3 !important;
-  border-color: #0056b3 !important;
+  background: #38bdf8 !important;
+  color: #0a0f1e !important;
+  border-color: #38bdf8 !important;
 }
 
 .info {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.03);
   padding: 12px;
+  color: #64748b;
 }
 
 .emailLink {
-  color: #fff !important;
+  color: #38bdf8 !important;
 }
 
 .emailLink:hover {
-  color: #ccc !important;
+  color: #7dd3fc !important;
 }

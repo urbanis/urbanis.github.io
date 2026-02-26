@@ -1,3 +1,5 @@
+import type React from 'react';
+
 export interface Project {
   id: string;
   title: string;
@@ -20,6 +22,12 @@ export interface SocialLink {
   tooltip: string;
 }
 
+export interface ExperienceStat {
+  icon: React.ReactNode;
+  years: number;
+  label: string;
+}
+
 export interface PersonalInfo {
   name: string;
   title: string;
@@ -27,4 +35,5 @@ export interface PersonalInfo {
   email: string;
   avatar: string;
   bio: string;
+  stats: ExperienceStat[];
 }

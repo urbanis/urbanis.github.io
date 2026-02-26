@@ -6,7 +6,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
+  background-color: #0f172a;
+  color: #f1f5f9;
   min-height: 100vh;
 }
 
@@ -18,7 +19,7 @@ body {
 
 /* Link styles */
 a {
-  color: inherit;
+  color: #38bdf8;
   text-decoration: none;
 }
 
@@ -28,11 +29,11 @@ a:hover {
 
 /* Card hover effect */
 .project-card {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px);
 }
 
 /* Icon hover effect */
@@ -49,7 +50,7 @@ a:hover {
   text-align: center;
   margin: 20px 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #0a4275;
+  border-bottom: 1px solid #38bdf8;
 }
 
 /* Bio section */

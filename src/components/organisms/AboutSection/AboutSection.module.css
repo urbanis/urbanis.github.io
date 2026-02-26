@@ -1,25 +1,91 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px 20px;
 }
+
+/* ── Bio ─────────────────────────────────────────── */
 
 .bio {
   font-size: 1em;
-  padding: 20px;
+  padding: 0 20px 28px;
   text-align: center;
+  white-space: pre-line;
+  color: #94a3b8 !important;
+  line-height: 1.9;
 }
+
+/* ── Stats grid ──────────────────────────────────── */
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 16px;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  cursor: default;
+}
+
+.statIcon {
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #38bdf8;
+}
+
+.statYears {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #38bdf8;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ── Title & subtitle ────────────────────────────── */
 
 .title {
   text-align: center;
-  margin: 20px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #0a4275;
+  margin: 0 0 8px !important;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.3);
   font-size: 2em !important;
+  color: #38bdf8 !important;
 }
 
 .subtitle {
   font-size: 1em;
-  padding: 20px;
+  padding: 12px 20px 28px;
   text-align: center;
+  color: #64748b !important;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
 }

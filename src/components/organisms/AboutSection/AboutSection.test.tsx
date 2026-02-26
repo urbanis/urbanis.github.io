@@ -4,17 +4,17 @@ import { AboutSection } from './AboutSection';
 
 describe('AboutSection', () => {
   it('renders the bio text', () => {
-    render(<AboutSection bio="Test bio content" />);
+    render(<AboutSection bio="Test bio content" stats={[]} />);
     expect(screen.getByText('Test bio content')).toBeInTheDocument();
   });
 
   it('renders the Geoportfolio title', () => {
-    render(<AboutSection bio="Test bio" />);
+    render(<AboutSection bio="Test bio" stats={[]} />);
     expect(screen.getByText('Geoportfolio')).toBeInTheDocument();
   });
 
   it('renders the subtitle', () => {
-    render(<AboutSection bio="Test bio" />);
+    render(<AboutSection bio="Test bio" stats={[]} />);
     expect(
       screen.getByText(
         "Here you can find some public projects and blog's articles that I have been working on."

@@ -1,15 +1,33 @@
 .card {
-  margin: 20px 5px;
-  transition: transform 0.3s ease;
+  margin: 0;
+  background: rgba(30, 41, 59, 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  transition: border-color 0.3s ease;
+  height: 100%;
+}
+
+.card :global(.ant-card-meta-title) {
+  color: #f1f5f9 !important;
+  font-size: 1rem;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.card :global(.ant-card-meta-description) {
+  color: #94a3b8 !important;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  border-color: rgba(56, 189, 248, 0.25) !important;
 }
 
 .image {
   height: 200px;
   object-fit: cover;
+  border-radius: 11px 11px 0 0;
 }
 
 .meta {

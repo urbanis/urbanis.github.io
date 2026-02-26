@@ -1,9 +1,5 @@
 .icon {
-  transition: transform 0.2s ease;
-}
-
-.icon:hover {
-  transform: scale(1.2);
+  display: block;
 }
 
 .link {

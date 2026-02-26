@@ -1,0 +1,246 @@
+{
+  "profile": {
+    "name": "Nisleida Morales",
+    "headline": "Urban Planner / Location Intelligence Expert",
+    "location": "Berlin, Germany",
+    "email": "nisleida.morales@gmail.com",
+    "phone": "+49 151 59967882",
+    "links": [
+      { "label": "Portfolio", "url": "https://urbanis.github.io" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/nisleida" }
+    ]
+  },
+  "places": [
+    {
+      "id": "caracas",
+      "city": "Caracas",
+      "country": "Venezuela",
+      "coordinates": [-66.9036, 10.4806],
+      "zoom": 10,
+      "period": "2012 - 2018"
+    },
+    {
+      "id": "buenosaires",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "coordinates": [-58.3816, -34.6037],
+      "zoom": 11,
+      "period": "2019 - 2024"
+    },
+    {
+      "id": "berlin",
+      "city": "Berlin",
+      "country": "Germany",
+      "coordinates": [13.405, 52.52],
+      "zoom": 11,
+      "period": "2022 - Present"
+    }
+  ],
+  "timelineStages": [
+    {
+      "id": "stage_2012_2018",
+      "year": 2018,
+      "placeId": "caracas",
+      "title": "B.Sc. Urban Planning",
+      "description": "Bachelor studies in Urban Planning."
+    },
+    {
+      "id": "stage_2019_2021",
+      "year": 2020,
+      "placeId": "buenosaires",
+      "title": "Territorial Planning & GIS Consulting",
+      "description": "Consulting experience focused on smart cities/tourism indicators and methodology work."
+    },
+    {
+      "id": "stage_2021_2024",
+      "year": 2023,
+      "placeId": "buenosaires",
+      "title": "Esri ecosystem role + Dual Master in progress",
+      "description": "Spatial Data Analyst / Solutions Engineer and ongoing dual master program."
+    },
+    {
+      "id": "stage_2022_2024",
+      "year": 2024,
+      "placeId": "berlin",
+      "title": "Research roles in Berlin",
+      "description": "Research assistant roles focused on cycling safety and mobility-related spatial analysis."
+    },
+    {
+      "id": "stage_2024_present",
+      "year": 2025,
+      "placeId": "berlin",
+      "title": "Mapular — Geospatial Developer / Solutions Engineer",
+      "description": "Retail intelligence through geospatial strategy and product work."
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp_mapular_2024_present",
+      "type": "professional",
+      "placeId": "berlin",
+      "title": "Geospatial Developer / Solutions Engineer",
+      "org": "Mapular UG (Germany)",
+      "start": "2024-04-01",
+      "end": null,
+      "highlights": [
+        "Led the development of Store Locator Insights as Product Owner, shaping vision and roadmap",
+        "Translated location data into actionable retail insights via dynamic dashboards",
+        "Identified store opportunities using catchment analysis, drive-time patterns, and behavioral data"
+      ],
+      "skills": ["Location Intelligence", "Catchment Analysis", "Dashboards", "Product Ownership"]
+    },
+    {
+      "id": "exp_aeroterra_2021_2024",
+      "type": "professional",
+      "placeId": "buenosaires",
+      "title": "Spatial Data Analyst / Solutions Engineer",
+      "org": "Aeroterra SA (Esri Argentina and Uruguay)",
+      "start": "2021-05-01",
+      "end": "2024-04-01",
+      "highlights": [
+        "Automated workflows with Python, Notebooks, ModelBuilder and Survey123",
+        "Applied data management and analysis with Python and SQL",
+        "Created and manipulated digital maps and developed web mapping",
+        "Prepared and maintained data for Business Intelligence implementation",
+        "Designed GIS technical proposals for different industries",
+        "Provided support/consultancy to clients and delivered training",
+        "Supported junior roles"
+      ],
+      "skills": ["Python", "SQL", "ArcGIS", "Survey123", "Web Mapping", "BI Support"]
+    },
+    {
+      "id": "exp_fci_2019_2021",
+      "type": "professional",
+      "placeId": "buenosaires",
+      "title": "Territorial Planning and GIS Consultant",
+      "org": "Future Cities Institute (Argentina)",
+      "start": "2019-05-01",
+      "end": "2021-05-01",
+      "highlights": [
+        "Collaborated on a Smart Tourism Destinations transformation methodology for the Ministry of Tourism in Brazil",
+        "Defined and adapted Smart Cities and Smart Destinations indicators",
+        "Planned and coordinated 400 lecturers"
+      ],
+      "skills": ["Urban Planning", "GIS", "Indicators", "Project Coordination"]
+    },
+    {
+      "id": "exp_tub_2022_2024",
+      "type": "professional",
+      "placeId": "berlin",
+      "title": "Research Assistant",
+      "org": "Institute of Land and Sea Transport Systems, TU Berlin (Germany)",
+      "start": "2022-10-01",
+      "end": "2024-12-01",
+      "highlights": [
+        "Project: Safety effects of different cycling modes on pedestrian traffic",
+        "Monitored survey technology and evaluated traffic data"
+      ],
+      "skills": ["Research", "Traffic Data", "Survey Technology", "Cycling Safety"]
+    },
+    {
+      "id": "exp_gmc_2022_2023",
+      "type": "professional",
+      "placeId": "berlin",
+      "title": "Research Assistant",
+      "org": "Good Mobility Council (Germany)",
+      "start": "2022-08-01",
+      "end": "2023-03-01",
+      "highlights": [
+        "Spatial analysis of real estate projects with QGIS and Python (travel time, access to public transport, walkability, network connectivity)",
+        "Research and data collection of mobility plans (Mobilitätskonzept) and environmental certification systems (LEED, BREEAM, WELL)",
+        "Maintenance and improvements of the evaluation system"
+      ],
+      "skills": ["QGIS", "Python", "Spatial Analysis", "Mobility Plans", "Sustainability Certifications"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_bsc_2012_2018",
+      "placeId": "caracas",
+      "degree": "B.Sc. Urban Planning",
+      "institution": "Simon Bolivar University (Venezuela)",
+      "start": "2012-01-01",
+      "end": "2018-12-01",
+      "skills": ["Urban Planning", "Spatial Thinking"]
+    },
+    {
+      "id": "edu_data_analytics_2021_2022",
+      "placeId": "buenosaires",
+      "degree": "Data Analytics",
+      "institution": "Coder House (Argentina)",
+      "start": "2021-01-01",
+      "end": "2022-12-01",
+      "skills": ["Data Analytics", "SQL", "Python"]
+    },
+    {
+      "id": "edu_dual_msc_2019_2023",
+      "placeId": "buenosaires",
+      "secondaryPlaceId": "berlin",
+      "degree": "Dual M.Sc. Urban Planning and Mobility",
+      "institution": "Technical University of Berlin (Germany) & Buenos Aires University (Argentina)",
+      "start": "2019-01-01",
+      "end": "2023-12-01",
+      "skills": ["Urban Mobility", "Planning", "Research"]
+    }
+  ],
+  "skills": {
+    "programming": [
+      { "name": "SQL", "level": "Intermediate" },
+      { "name": "Python", "level": "Intermediate" },
+      { "name": "TypeScript", "level": "Novice" },
+      { "name": "React JS", "level": "Novice" }
+    ],
+    "geospatialSoftware": [
+      { "name": "ArcGIS platform", "level": "Proficient" },
+      { "name": "QGIS", "level": "Novice" }
+    ],
+    "dataViz": [
+      { "name": "ArcGIS Dashboard", "level": "Proficient" },
+      { "name": "PowerBI", "level": "Intermediate" },
+      { "name": "Grafana", "level": "Proficient" }
+    ],
+    "graphics": [
+      { "name": "Adobe Illustrator", "level": "Proficient" },
+      { "name": "Adobe InDesign", "level": "Intermediate" }
+    ]
+  },
+  "languages": [
+    { "name": "Spanish", "level": "Mother tongue" },
+    { "name": "English", "level": "C1" },
+    { "name": "German", "level": "B1" }
+  ],
+  "achievements": [
+    { "id": "badge_bsc", "type": "education", "label": "B.Sc. Urban Planning Completed", "unlockedAt": 2018 },
+    { "id": "badge_gis_foundations", "type": "skill", "label": "GIS Foundations", "unlockedAt": 2018 },
+    { "id": "badge_consulting", "type": "skill", "label": "GIS Consulting Experience", "unlockedAt": 2020 },
+    { "id": "badge_data_analytics", "type": "education", "label": "Data Analytics Program", "unlockedAt": 2022 },
+    { "id": "badge_dual_msc", "type": "education", "label": "Dual M.Sc. Completed", "unlockedAt": 2023 },
+    { "id": "badge_retail_li", "type": "skill", "label": "Retail Location Intelligence", "unlockedAt": 2024 }
+  ],
+  "careerProgress": [
+    {
+      "id": "job_future_cities",
+      "company": "Future Cities Institute",
+      "role": "Territorial Planning and GIS Consultant",
+      "placeId": "buenosaires",
+      "startYear": 2019,
+      "endYear": 2021
+    },
+    {
+      "id": "job_aeroterra",
+      "company": "Aeroterra SA (Esri Argentina and Uruguay)",
+      "role": "Spatial Data Analyst / Solutions Engineer",
+      "placeId": "buenosaires",
+      "startYear": 2021,
+      "endYear": 2024
+    },
+    {
+      "id": "job_mapular",
+      "company": "Mapular UG",
+      "role": "Geospatial Developer / Solutions Engineer",
+      "placeId": "berlin",
+      "startYear": 2024,
+      "endYear": 2026
+    }
+  ]
+}

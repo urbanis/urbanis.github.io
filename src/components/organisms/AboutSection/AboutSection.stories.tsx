@@ -10,6 +10,9 @@ const meta: Meta<typeof AboutSection> = {
 
 export default meta;
 type Story = StoryObj<typeof AboutSection>;
+<p className="whitespace-pre-line">
+  {personalInfo.bio}
+</p>
 
 export const Default: Story = {
   args: {
