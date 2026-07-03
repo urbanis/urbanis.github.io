@@ -31,3 +31,9 @@ React 19 · TypeScript · Vite · Ant Design · Mapbox GL · motion (Framer Moti
 
 **Nisleida Morales**
 [linkedin.com/in/nisleida](https://www.linkedin.com/in/nisleida) · nisle.morales@gmail.com
+
+## License
+
+© 2026 Nisleida Morales. All rights reserved.
+
+This repository is public for portfolio and demonstration purposes only. You may view the code, but you may **not** copy, modify, distribute, or reuse it (in whole or in part) without express written permission.
