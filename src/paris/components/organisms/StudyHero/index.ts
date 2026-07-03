@@ -1,0 +1,1 @@
+export { StudyHero } from './StudyHero';

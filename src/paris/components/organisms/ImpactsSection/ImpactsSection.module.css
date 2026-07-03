@@ -1,0 +1,32 @@
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(64px, 12vh, 160px) var(--gutter);
+  display: grid;
+  gap: clamp(36px, 6vh, 56px);
+}
+
+.intro {
+  max-width: var(--reading);
+}
+
+.h {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-top: 16px;
+}
+
+.lede {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+.stats > * {
+  min-width: 0;
+}

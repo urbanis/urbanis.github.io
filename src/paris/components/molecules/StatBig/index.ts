@@ -1,0 +1,1 @@
+export { StatBig } from './StatBig';

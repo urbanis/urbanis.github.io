@@ -1,0 +1,109 @@
+.wrap {
+  margin: 0;
+}
+
+/* category colours, sampled from the author's original graphic */
+.scooter {
+  background: #c3d668;
+}
+.bike {
+  background: #fcf8b3;
+}
+.moped {
+  background: #b0dbe8;
+}
+.other {
+  background: #d9a7c0;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 28px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.swatch {
+  width: 28px;
+  height: 13px;
+  border-radius: 3px;
+}
+
+.scroller {
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.track {
+  position: relative;
+  display: flex;
+  gap: clamp(6px, 1.6vw, 22px);
+  min-width: max-content;
+  align-items: flex-start;
+}
+
+/* the horizontal axis line, sitting at the vertical centre of the dots */
+.axis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 41px;
+  height: 1px;
+  background: #cdc8b8;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 0 6px;
+}
+
+.year {
+  height: 24px;
+  line-height: 24px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.chips {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.chip {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+  padding: 3px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+}

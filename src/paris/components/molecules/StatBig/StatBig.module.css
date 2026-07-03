@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.number {
+  font-family: var(--font-mono);
+  font-size: clamp(2.6rem, 8vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+/* Compact variant: for rows of several stats where long numbers
+   (e.g. 2,165,423) would otherwise overflow and collide. */
+.compact .number {
+  font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+  max-width: 22ch;
+}
+
+.source {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+}

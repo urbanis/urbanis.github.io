@@ -1,0 +1,10 @@
+.timelineCol {
+  display: contents;
+}
+
+@media (max-width: 640px) {
+  .timelineCol,
+  .skillsCol {
+    display: none;
+  }
+}

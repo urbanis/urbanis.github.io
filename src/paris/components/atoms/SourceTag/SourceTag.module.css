@@ -1,0 +1,7 @@
+.source {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}

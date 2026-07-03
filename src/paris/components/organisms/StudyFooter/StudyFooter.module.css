@@ -1,0 +1,29 @@
+.footer {
+  background: var(--paper-deep);
+  padding: clamp(48px, 8vh, 96px) var(--gutter);
+}
+
+.inner {
+  max-width: var(--reading);
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.sources {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 20px;
+  line-height: 1.6;
+}

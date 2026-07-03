@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://urbanis.github.io/sitemap.xml

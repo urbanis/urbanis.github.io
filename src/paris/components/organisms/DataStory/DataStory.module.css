@@ -1,0 +1,31 @@
+.section {
+  padding: clamp(64px, 12vh, 160px) 0;
+  background: linear-gradient(var(--paper), var(--paper-deep) 60%, var(--paper));
+}
+
+.intro {
+  max-width: var(--reading);
+  margin: 0 auto 36px;
+  padding: 0 var(--gutter);
+}
+
+.methodFigure {
+  max-width: 1040px;
+  margin: 0 auto clamp(56px, 10vh, 130px);
+  padding: 0 var(--gutter);
+}
+
+.h {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  margin-top: 16px;
+}
+
+.method {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.findings {
+  display: grid;
+  gap: clamp(80px, 16vh, 200px);
+}

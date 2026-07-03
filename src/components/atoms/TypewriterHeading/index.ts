@@ -1,0 +1,1 @@
+export { TypewriterHeading } from './TypewriterHeading';

@@ -1,0 +1,172 @@
+.section {
+  background: #FDFBF2;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.inner {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.lineTop,
+.lineBottom {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.accent {
+  color: #006080;
+}
+
+/* ── Cup ── */
+
+.cupWrap {
+  position: relative;
+  width: 240px;
+  margin: 28px 0 12px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.cupWrap .svg {
+  transition: transform 0.25s ease;
+}
+
+.cupWrap:hover .svg {
+  transform: translateY(-4px);
+}
+
+/* Speech bubble — sits to the right of the mug */
+.bubble {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 18px);
+  transform: translateX(-8px) translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  background: #000a1a;
+  color: #FDFBF2;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Arrow pointing left toward the mug */
+.bubble::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border: 7px solid transparent;
+  border-right-color: #000a1a;
+}
+
+.cupWrap:hover .bubble {
+  opacity: 1;
+  transform: translateX(0) translateY(-50%);
+}
+
+/* Bubble on the left side */
+.bubbleLeft {
+  left: auto;
+  right: calc(100% + 18px);
+  transform: translateX(8px) translateY(-50%);
+}
+
+.bubbleLeft::after {
+  right: auto;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #000a1a;
+}
+
+.cupWrap:hover .bubbleLeft {
+  transform: translateX(0) translateY(-50%);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Parent group: wavy cover rises from cup base to rim — plays once */
+@keyframes riseUp {
+  0%   { transform: translateY(0);     }
+  70%  { transform: translateY(-92px); }
+  100% { transform: translateY(-92px); }
+}
+
+.coverRise {
+  animation: riseUp 3s ease-in-out 1 forwards;
+}
+
+/* Child path: horizontal slosh — continuous loop */
+@keyframes slosh {
+  0%, 100% { transform: translateX(0);     }
+  50%      { transform: translateX(-14px); }
+}
+
+.coverWave {
+  animation: slosh 2.2s ease-in-out infinite;
+}
+
+/* Steam rises in once cup is full and stays — loops gently after appearing */
+@keyframes steamIn {
+  0%   { opacity: 0;   transform: translateY(0);    }
+  100% { opacity: 0.5; transform: translateY(-8px); }
+}
+
+@keyframes steamLoop {
+  0%   { opacity: 0.5;  transform: translateY(-8px);  }
+  50%  { opacity: 0.4;  transform: translateY(-16px); }
+  100% { opacity: 0.5;  transform: translateY(-8px);  }
+}
+
+.steam {
+  opacity: 0;
+  animation:
+    steamIn   0.6s ease-out 1 forwards,
+    steamLoop 2.4s ease-in-out infinite;
+}
+
+/* steamLoop starts after steamIn finishes */
+.s1 { animation-delay: 2.1s,          calc(2.1s + 0.6s); }
+.s2 { animation-delay: calc(2.1s + 0.4s), calc(2.1s + 0.4s + 0.6s); }
+.s3 { animation-delay: calc(2.1s + 0.8s), calc(2.1s + 0.8s + 0.6s); }
+
+/* ── Responsive ── */
+
+@media (max-width: 640px) {
+  .section {
+    padding: 60px 24px;
+  }
+  .cupWrap {
+    width: 180px;
+  }
+}

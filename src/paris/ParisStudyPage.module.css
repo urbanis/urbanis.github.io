@@ -1,0 +1,59 @@
+/* All design tokens + base styles are scoped to .page so the study page is
+   fully self-contained and never affects the rest of the site. */
+.page {
+  /* palette */
+  --paper: #f4f1ea;
+  --paper-deep: #ece7db;
+  --ink: #1a1a1a;
+  --accent: #f2c94c;
+  --teal: #006080;
+  --muted: #6b6b6b;
+  --tub-red: #c50e1f;
+
+  /* type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+
+  /* layout */
+  --reading: 680px;
+  --gutter: clamp(20px, 6vw, 96px);
+
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Scoped, ZERO-specificity reset so component classes always win.
+   The leading .page is wrapped in :where() so the whole selector stays at
+   0 specificity (a bare ".page :where(li)" would be (0,1,0) and tie with
+   component classes like .entry, breaking their padding). */
+:where(.page) * {
+  box-sizing: border-box;
+}
+
+:where(.page) :where(h1, h2, h3, h4, p, figure, blockquote, ul, ol, li) {
+  margin: 0;
+  padding: 0;
+}
+
+:where(.page) :where(ul, ol) {
+  list-style: none;
+}
+
+:where(.page) :is(h1, h2, h3) {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+:where(.page) img {
+  max-width: 100%;
+  display: block;
+}

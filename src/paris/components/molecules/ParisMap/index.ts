@@ -1,0 +1,1 @@
+export { ParisMap } from './ParisMap';

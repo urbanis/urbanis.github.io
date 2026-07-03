@@ -1,0 +1,130 @@
+.section {
+  background: #000a1a;
+  padding: 72px 40px;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s, border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 16px 16px 0 0;
+  transition: opacity 0.2s;
+}
+
+.card:nth-child(1)::before { background: #c3dceb; }
+.card:nth-child(2)::before { background: #F2C94C; }
+.card:nth-child(3)::before { background: #468cb4; }
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:nth-child(1) .icon { background: rgba(195, 220, 235, 0.12); color: #c3dceb; }
+.card:nth-child(2) .icon { background: rgba(242, 201, 76, 0.12); color: #F2C94C; }
+.card:nth-child(3) .icon { background: rgba(70, 140, 180, 0.15); color: #468cb4; }
+
+.cardTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.cardSub {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.card:nth-child(1) .arrow { color: #c3dceb; }
+.card:nth-child(2) .arrow { color: #F2C94C; }
+.card:nth-child(3) .arrow { color: #468cb4; }
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 20px;
+  }
+
+  .card::before {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    width: 3px;
+    height: auto;
+    border-radius: 16px 0 0 16px;
+  }
+
+  .icon {
+    flex-shrink: 0;
+  }
+
+  .cardSub {
+    display: none;
+  }
+
+  .arrow {
+    margin-top: 0;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 48px 20px;
+  }
+}

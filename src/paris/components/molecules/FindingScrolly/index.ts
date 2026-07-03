@@ -1,0 +1,1 @@
+export { FindingScrolly } from './FindingScrolly';

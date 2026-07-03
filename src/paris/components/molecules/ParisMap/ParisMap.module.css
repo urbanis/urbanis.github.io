@@ -1,0 +1,80 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.mapBox {
+  position: relative;
+  width: 100%;
+  height: clamp(320px, 52vh, 470px);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: #14181f;
+  white-space: nowrap;
+  pointer-events: none;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    0 0 3px rgba(255, 255, 255, 0.85);
+}
+
+.toggle {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.frameBtn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--paper-deep);
+  border-radius: 999px;
+  padding: 4px 11px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.frameBtn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.frameActive {
+  color: #fff;
+  background: var(--teal);
+  border-color: var(--teal);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.legendBar {
+  width: 120px;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #c0392b, #e67e22, #f6d55c, #86c34e, #2e8b3d);
+}
+
+.legendNote {
+  margin-left: auto;
+}

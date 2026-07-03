@@ -1,0 +1,18 @@
+.figure {
+  margin: 0;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: var(--paper-deep);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-top: 12px;
+}

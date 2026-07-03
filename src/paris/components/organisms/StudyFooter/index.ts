@@ -1,0 +1,1 @@
+export { StudyFooter } from './StudyFooter';

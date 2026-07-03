@@ -1,0 +1,39 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 0 28px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px;
+  min-height: 2.6rem;
+}
+
+.subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+  min-height: 1.4rem;
+  font-weight: 400;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #F2C94C;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
