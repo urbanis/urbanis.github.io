@@ -15,8 +15,15 @@ export function StudyHero() {
           Paris &amp; the Public Policy of Micromobility
         </h1>
         <p className={styles.subhead}>
-          How a city went from free-floating pioneer to Europe&rsquo;s most
-          governed scooter market, and whether the policy actually worked.
+          
+        </p>
+        <p className={styles.context}>
+          This study was developed as part of my master&rsquo;s coursework at TU
+          Berlin, within the <em>Urbanisation and Urban Development</em> module.
+          It began as a research assignment to understand a complex urban
+          problem, and then developed into an applied analysis in which I carried out my
+          own data collection and spatial analysis to evaluate how, and to what
+          extent, Paris managed to regulate the market.
         </p>
         <p className={styles.meta}>
           A master&rsquo;s research study ·{' '}

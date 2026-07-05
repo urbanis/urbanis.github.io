@@ -49,6 +49,20 @@
   margin-bottom: 28px;
 }
 
+.context {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  line-height: 1.65;
+  max-width: 46ch;
+  color: var(--ink);
+  margin-bottom: 28px;
+}
+
+.context em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--teal);
+}
+
 .meta {
   font-family: var(--font-mono);
   font-size: 0.85rem;

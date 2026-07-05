@@ -9,7 +9,7 @@ export const projects: Project[] = [
       'An immersive scrollytelling atlas tracing how three cities (Caracas, Buenos Aires, and Berlin) shaped one urban planner\'s understanding of human mobility. Built with React, Leaflet, and Framer Motion.',
     image: '/assets/images/my%20journey.png',
     imageAlt: 'Behavioral Cartographies',
-    tags: ['React', 'Leaflet', 'Scrollytelling'],
+    tags: ['Scrollytelling', 'Mapping'],
     links: [
       {
         type: 'website',
@@ -25,7 +25,7 @@ export const projects: Project[] = [
       'Browser-based tool to design, evaluate and export urban street cross-sections.',
     image: '/assets/blog/street-generator-1.png',
     imageAlt: 'Street Generator',
-    tags: ['React', 'OpenStreetMap', 'LLM'],
+    tags: ['Tool', 'LLM', 'Urban Design'],
     links: [
       {
         type: 'website',
@@ -40,7 +40,7 @@ export const projects: Project[] = [
       'Drop a GTFS .zip or GBFS .json: see lines, stops, stations and charts. A browser-based tool for exploring public transit feeds interactively.',
     image: '/assets/blog/transit-feed-explorer-1.png',
     imageAlt: 'GTFS and GBFS Explorer',
-    tags: ['React', 'GTFS', 'Mobility'],
+    tags: ['Tool', 'GTFS - GBFS', 'Mobility'],
     links: [
       {
         type: 'website',
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       'Maps the Berlin transit network through the eyes of female explorers. Every terminal station visited, rated, and described, building a collective dataset on how the city actually feels, not just how it is planned.',
     image: '/assets/blog/coordinate-club-1.png',
     imageAlt: "Commuters' Mapping",
-    tags: ['React', 'Mapbox', 'Community'],
+    tags: ['Tool', 'Data Collection', 'Community'],
     links: [
       {
         type: 'website',
@@ -71,7 +71,7 @@ export const projects: Project[] = [
       'Real-time ETL pipeline consolidating micromobility data from 4 GBFS providers across Paris and Berlin. Built with Apache Airflow, PostgreSQL/PostGIS, and Docker, collecting hourly snapshots and refreshing spatiotemporal analysis views daily.',
     image: '/assets/images/paris-scooters.jpg',
     imageAlt: 'Paris',
-    tags: ['Airflow', 'PostGIS', 'Docker'],
+    tags: ['Data Pipeline', 'Research', 'Mobility'],
     links: [
       {
         type: 'github',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
       "An editorial scrollytelling study of how Paris regulated shared scooters, from free-floating pioneer to Europe's most governed market, with interactive Mapbox choropleths built from real GBFS data. TU Berlin, 2023.",
     image: '/figures/Paris-scooter.jpg',
     imageAlt: 'Shared e-scooters in front of the Eiffel Tower',
-    tags: ['React', 'Mapbox', 'Scrollytelling'],
+    tags: ['Research', 'Public Policy', 'Mobility'],
     links: [
       {
         type: 'website',

@@ -12,7 +12,7 @@ export function StudyFooter() {
           TU Berlin · 2023
         </p>
         <p className={styles.meta}>
-          Author: Nisleida Morales · Supervisor: Prof. Dr. Dirk Heinrichs
+          Author: Nisleida Morales
         </p>
         <p className={styles.sources}>
           Data: Lime GBFS feed via the French Ministry of Transport open-data

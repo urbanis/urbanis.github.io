@@ -4,7 +4,7 @@ import styles from './AboutSection.module.css';
 
 const PHOTOS: { src: string; alt: string; fit?: 'cover' | 'contain' }[] = [
   { src: '/assets/images/bsas-bike.jpg', alt: 'Cycling under the jacarandas in Buenos Aires' },
-  { src: '/assets/images/doodle-laptop.png', alt: 'Illustration of Nisleida Morales with a laptop', fit: 'contain' },
+  // { src: '/assets/images/doodle-laptop.png', alt: 'Illustration of Nisleida Morales with a laptop', fit: 'contain' },
   { src: '/assets/images/expo.jpg', alt: 'Presenting at a mobility expo' },
   { src: '/assets/images/berlin-bike.png', alt: 'Cycling by the Victory Column in Berlin' },
 ];
