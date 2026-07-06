@@ -229,7 +229,7 @@
 .footer {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
   padding-top: 14px;
   border-top: 1px solid #e2e8f0;
@@ -275,6 +275,39 @@
 
 .arrow:hover {
   background: #d4a830;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.codeLink {
+  display: inline-block;
+  padding: 5px 14px;
+  background: transparent;
+  border: 1.5px solid #94a3b8;
+  color: #334155;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transform: skewX(-12deg);
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.codeLink span {
+  display: inline-block;
+  transform: skewX(12deg);
+}
+
+.codeLink:hover {
+  border-color: #000a1a;
+  color: #000a1a;
 }
 
 .arrowDisabled {

@@ -54,7 +54,7 @@ export const translations: Record<Lang, {
       },
       descriptions: {
         'my-journey': 'An immersive storytelling atlas tracing how three cities (Caracas, Buenos Aires, and Berlin) shaped one urban planner\'s understanding of human mobility. Built with React, Leaflet, and Framer Motion.',
-        'street-generator': 'Browser-based tool to design, evaluate and export urban street cross-sections.',
+        'street-generator': 'Browser tool to design and export urban street cross-sections, plus an MCP server that lets an AI assistant generate and render streets from a description or a real address.',
         'gtfs-explorer': 'Drop a GTFS .zip or GBFS .json: see lines, stops, stations and charts. A browser-based tool for exploring public transit feeds interactively.',
         'coordinate-club': 'Browser-based tool for mapping the Berlin transit network through the eyes of female explorers. Every terminal station visited, rated, and described, building a collective dataset on how the city actually feels, not just how it is planned.',
         'paris-scooters': 'Real-time ETL pipeline consolidating micromobility data from four GBFS providers across Paris and Berlin. Built with Apache Airflow, PostgreSQL/PostGIS, and Docker, collecting hourly snapshots and refreshing spatiotemporal analysis views daily.',
@@ -138,7 +138,7 @@ export const translations: Record<Lang, {
       },
       descriptions: {
         'my-journey': 'Un atlas narrativo inmersivo que traza cómo tres ciudades (Caracas, Buenos Aires y Berlín) moldearon la comprensión de la movilidad humana de una urbanista. Desarrollado con React, Leaflet y Framer Motion.',
-        'street-generator': 'Herramienta en el navegador para diseñar, evaluar y exportar secciones transversales de calles urbanas.',
+        'street-generator': 'Herramienta web para diseñar y exportar secciones transversales de calles urbanas, más un servidor MCP que permite a un asistente de IA generar y renderizar calles a partir de una descripción o una dirección real.',
         'gtfs-explorer': 'Carga un archivo GTFS .zip o GBFS .json y visualiza líneas, paradas, estaciones y gráficos interactivos.',
         'coordinate-club': 'Herramienta web para mapear la red de transporte de Berlín a través de los ojos de exploradoras. Cada terminal visitada, valorada y descrita, construyendo un dataset colectivo sobre cómo se siente la ciudad, no solo cómo está planificada.',
         'paris-scooters': 'Pipeline ETL en tiempo real que consolida datos de micromovilidad de 4 proveedores GBFS en París y Berlín. Construido con Apache Airflow, PostgreSQL/PostGIS y Docker, recolectando snapshots horarios y actualizando vistas de análisis espaciotemporal diariamente.',
@@ -222,7 +222,7 @@ export const translations: Record<Lang, {
       },
       descriptions: {
         'my-journey': 'Ein immersiver Storytelling-Atlas, der zeigt, wie drei Städte (Caracas, Buenos Aires und Berlin) das Verständnis urbaner Mobilität einer Stadtplanerin geprägt haben. Entwickelt mit React, Leaflet und Framer Motion.',
-        'street-generator': 'Browser-basiertes Tool zum Entwerfen, Bewerten und Exportieren urbaner Straßenquerschnitte.',
+        'street-generator': 'Browser-Tool zum Entwerfen und Exportieren urbaner Straßenquerschnitte, plus ein MCP-Server, mit dem ein KI-Assistent Straßen aus einer Beschreibung oder echten Adresse generiert und rendert.',
         'gtfs-explorer': 'Lade eine GTFS .zip oder GBFS .json: sieh Linien, Haltestellen, Stationen und Diagramme interaktiv.',
         'coordinate-club': 'Browser-basiertes Tool zur Kartierung des Berliner Nahverkehrsnetzes aus der Perspektive von Forscherinnen. Jede Endstation besucht, bewertet und beschrieben, ein kollektiver Datensatz darüber, wie sich die Stadt wirklich anfühlt, nicht nur wie sie geplant ist.',
         'paris-scooters': 'Echtzeit-ETL-Pipeline zur Konsolidierung von Mikromobilitätsdaten von 4 GBFS-Anbietern in Paris und Berlin. Entwickelt mit Apache Airflow, PostgreSQL/PostGIS und Docker, stündliche Snapshots und tägliche Aktualisierung räumlich-zeitlicher Analyseviews.',

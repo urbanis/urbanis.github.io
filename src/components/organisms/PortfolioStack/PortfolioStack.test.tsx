@@ -59,8 +59,8 @@ describe('PortfolioStack', () => {
 
   it('renders link buttons with correct href', () => {
     renderStack();
-    const links = screen.getAllByRole('link', { name: /Open Project One/i });
-    expect(links[0]).toHaveAttribute('href', 'https://github.com/one');
-    expect(links[0]).toHaveAttribute('target', '_blank');
+    const link = screen.getByRole('link', { name: /Project One source code/i });
+    expect(link).toHaveAttribute('href', 'https://github.com/one');
+    expect(link).toHaveAttribute('target', '_blank');
   });
 });

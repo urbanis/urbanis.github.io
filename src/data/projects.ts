@@ -19,17 +19,21 @@ export const projects: Project[] = [
   },
   {
     id: 'street-generator',
-    title: 'Street Generator',
+    title: 'Street Generator — App & MCP',
     inProgress: true,
     description:
-      'Browser-based tool to design, evaluate and export urban street cross-sections.',
+      'Browser tool to design and export urban street cross-sections, plus an MCP server that lets an AI assistant generate and render streets from a description or a real address.',
     image: '/assets/blog/street-generator-1.png',
     imageAlt: 'Street Generator',
-    tags: ['Tool', 'LLM', 'Urban Design'],
+    tags: ['MCP', 'LLM', 'Urban Design'],
     links: [
       {
         type: 'website',
         url: 'https://streetgenerator.com',
+      },
+      {
+        type: 'github',
+        url: 'https://github.com/urbanis/street-generator-mcp',
       },
     ],
   },

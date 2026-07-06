@@ -20,7 +20,7 @@ const PROJECT_TAGS: Record<string, FilterKey[]> = {
   'nordelta':       ['urban', 'research'],
 };
 
-const ORDER = ['gtfs-explorer', 'paris-policy', 'coordinate-club', 'my-journey', 'street-generator', 'nordelta'];
+const ORDER = ['street-generator', 'gtfs-explorer', 'paris-policy', 'coordinate-club', 'my-journey', 'nordelta'];
 
 function ProjectCard({ project, t }: { project: Project; t: { descriptions: Record<string, string>; inProgress: string; view: string } }) {
   const primaryLink = project.links[0]?.url;
@@ -53,8 +53,26 @@ function ProjectCard({ project, t }: { project: Project; t: { descriptions: Reco
               </div>
             ))}
           </div>
-          {primaryLink ? (
-            <a href={primaryLink} target="_blank" rel="noopener noreferrer" className={styles.arrow} aria-label={`Open ${project.title}`}><span>{t.view}</span></a>
+          {project.links.length > 0 ? (
+            <div className={styles.links}>
+              {project.links.map((link) => {
+                const external = link.url.startsWith('http');
+                const isGithub = link.type === 'github';
+                return (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target={external ? '_blank' : undefined}
+                    rel={external ? 'noopener noreferrer' : undefined}
+                    className={isGithub ? styles.codeLink : styles.arrow}
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={isGithub ? `${project.title} source code` : `Open ${project.title}`}
+                  >
+                    <span>{isGithub ? 'Code ↗' : t.view}</span>
+                  </a>
+                );
+              })}
+            </div>
           ) : (
             <span className={styles.arrowDisabled}><span style={{ display: 'inline-block', transform: 'skewX(12deg)' }}>{t.view}</span></span>
           )}
