@@ -45,9 +45,17 @@ export function HeroSection() {
         </div>
 
         <div className={styles.actions}>
-          <Link to="/portfolio" className={styles.btnSecondary}>
+          <Link to="/portfolio" className={styles.btnPrimary}>
             {t.seeWork}
           </Link>
+          <a
+            href="https://github.com/urbanis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btnSecondary}
+          >
+            {t.github}
+          </a>
         </div>
 
       </div>

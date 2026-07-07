@@ -2,7 +2,7 @@ import type { Lang } from '@/contexts/LanguageContext';
 
 export const translations: Record<Lang, {
   hero: {
-    eyebrow: string; seeWork: string; contact: string; resume: string;
+    eyebrow: string; seeWork: string; github: string; contact: string; resume: string;
     roles: string[]; canvas: string;
   };
   about: { title: string; personalLabel: string; bio: string; personal: string; stats: string[] };
@@ -27,6 +27,7 @@ export const translations: Record<Lang, {
       roles: ['Urban Planner', 'Geospatial Developer', 'Solutions Engineer'],
       canvas: 'Building data-driven products.',
       seeWork: 'See my portfolio →',
+      github: 'See my GitHub →',
       contact: 'Get in touch',
       resume: 'Resume',
     },
@@ -111,6 +112,7 @@ export const translations: Record<Lang, {
       roles: ['Urbanista', 'Desarrolladora Geoespacial', 'Solutions Engineer'],
       canvas: 'Construyendo productos basados en datos.',
       seeWork: 'Ver mi portafolio →',
+      github: 'Ver mi GitHub →',
       contact: 'Contáctame',
       resume: 'Currículum',
     },
@@ -195,6 +197,7 @@ export const translations: Record<Lang, {
       roles: ['Stadtplanerin', 'Geospatial-Entwicklerin', 'Solutions Engineer'],
       canvas: 'Datengetriebene Produkte entwickeln.',
       seeWork: 'Mein Portfolio →',
+      github: 'Mein GitHub →',
       contact: 'Kontakt',
       resume: 'Lebenslauf',
     },
