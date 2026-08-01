@@ -4,6 +4,7 @@ export const projects: Project[] = [
   {
     id: 'my-journey',
     title: 'Behavioral Cartographies',
+    hidden: true,
     inProgress: true,
     description:
       'An immersive scrollytelling atlas tracing how three cities (Caracas, Buenos Aires, and Berlin) shaped one urban planner\'s understanding of human mobility. Built with React, Leaflet, and Framer Motion.',

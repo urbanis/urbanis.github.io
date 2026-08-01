@@ -21,9 +21,11 @@ export function HeroSection() {
   return (
     <div className={styles.hero}>
 
+      {/* Sticker hidden for now — restore this block to bring back the doodle
       <div className={styles.photoWrapper}>
         <img src="/assets/images/doodle.png" alt="Illustration of Nisleida Morales on a bicycle" className={styles.photo} />
       </div>
+      */}
 
       <div className={styles.content}>
         <p className={styles.eyebrow}>{t.eyebrow}</p>
